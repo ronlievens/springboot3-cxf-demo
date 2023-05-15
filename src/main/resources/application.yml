@@ -1,0 +1,15 @@
+# https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+spring:
+    main:
+        banner-mode: OFF
+    lifecycle:
+        timeout-per-shutdown-phase: 20s
+
+# ======================================================================================================================
+# = LOGGING
+# ======================================================================================================================
+logging:
+    pattern:
+        console: '%date [%thread] %-5level %logger - %message%n'
+    level:
+        root: INFO
