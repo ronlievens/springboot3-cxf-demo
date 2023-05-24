@@ -95,6 +95,10 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <excludeGroupIds>org.projectlombok</excludeGroupIds>
+                    <layers>
+                        <enabled>true</enabled>
+                    </layers>
+                    <imageName>${project.groupId}/${project.artifactId}:${project.version}</imageName>
                 </configuration>
             </plugin>
         </plugins>
